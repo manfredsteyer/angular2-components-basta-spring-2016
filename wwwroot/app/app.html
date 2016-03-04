@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+
+<div>
+
+    <option-box [(value)]="postOption">
+        <option-item [selected]="true"
+                     [value]="1"
+                     (change)="change($event)">
+
+            <b>Per Express</b>
+
+        </option-item>
+        <option-item [selected]="false"
+                     [value]="2"
+                     (change)="change($event)">
+            <i>Per Einschreiben</i>
+        </option-item>
+    </option-box>
+
+</div> 
+
+<div>
+    {{ postOption }}
+
+</div>
